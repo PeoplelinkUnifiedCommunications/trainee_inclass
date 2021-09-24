@@ -87,7 +87,8 @@ button {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-between;
+  padding: 0px 70px 0px 70px;
 }
 .forgot{
   color:#4AB9E2
@@ -123,10 +124,19 @@ button {
     width: 100%;
   }
 }
+@media(max-width:375px){
+  .forgotrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+}
+  
 @media(max-width:414px){
   .copyright{
-    margin-top: 19vh;
-    padding: 0px 28px 0px 28px;
+    margin-top: 20vh;
+    padding: 0px 20px 0px 20px;
   }
   .password{
     margin-left: 5vh;

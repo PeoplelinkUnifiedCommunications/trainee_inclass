@@ -78,18 +78,18 @@ class App extends React.Component {
               <div className="forgotrow">
                 <div className="forgot">Forgot Password</div>
                 <div>
-                  <span>Don't have account?</span>&nbsp;
+                  <span className="dont"> Don't have account?</span>&nbsp;
                   <span style={{color:"#4AB9E2"}}>signin?</span>
               </div>
             </div>
 
             <div className="copyright">
               <span style={{ color: "#506E7C" }}>
-                <h5>
-                  copyright Ⓒ 2020-21 inclass All rights reserved | Powered by
+                
+                  <small>copyright Ⓒ 2020-21 inclass All rights reserved | Powered by
                   <br />
-                  Peoplelink Unified Communications Pvt Ltd
-                </h5>
+                  Peoplelink Unified Communications Pvt Ltd</small>
+                
               </span>
             </div>
           </form>
