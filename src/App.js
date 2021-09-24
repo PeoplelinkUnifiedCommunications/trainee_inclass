@@ -8,26 +8,35 @@ class App extends React.Component {
     return (
       <div className="fontall">
         <div className="split left">
-          {/* <img src = {bg} /> */}
           <h2 className="font">
-            Building{" "}
+            <span style={{ color: "#25637B" }}>Building </span>
             <span style={{ color: "orange" }}>Virtual Communication</span>{" "}
-            Between
-            <br /> Teacher And Student
+            <span style={{ color: "#25637B" }}>
+              Between
+              <br /> Teacher And Student
+            </span>
           </h2>
+          <img src={bg} alt="img" />
+
           <div className="bottom">
-            <h5>The Learning Platform With An Unparalled User Experiance</h5>
+            <span style={{ color: "#25637B" }}>
+              <h5>The Learning Platform With An Unparalled User Experiance</h5>
+            </span>
             <h5>
               <span style={{ color: "orange" }}>
                 CREATE CLASS | JOIN CLASS | TEACH & LEARN
               </span>
             </h5>
-            <h5>
-              HIPA ELIGIBLE AND PCI DSS, SOC, ISO/EIC 27017, ISOEIC 27018, AND
-              ISO 9001 COMPLAINT.
-            </h5>
+            <span style={{ color: "#25637B" }}>
+              <h5>
+                HIPA ELIGIBLE AND PCI DSS, SOC, ISO/EIC 27017, ISOEIC 27018, AND
+                ISO 9001 COMPLAINT.
+              </h5>
+            </span>
           </div>
         </div>
+
+
 
         <div class="split right">
           <form>
@@ -36,19 +45,25 @@ class App extends React.Component {
               <option>हिंदी</option>
               <option>తెలుగు</option>
             </select>
-            <div className="flex">
-              <img className="logo" src={vk} />
+          
+              <div className="rightlogo">
+                <img className="logo" src={vk}></img>
+              </div>
               <h2>
-                <label>Login</label>
+                <span style={{ color: "#506E7C" }}>
+                  <label>Login</label>
+                </span>
               </h2>
+              <div className="middle">
               <input
                 className="input"
                 type="email"
                 placeholder="Username"
                 required
               />
-              <br /><br /><br />
-              
+                <br />
+                <br/>
+                <br />
               <div className="input-icon">
                 <input
                   className="input password"
@@ -58,26 +73,24 @@ class App extends React.Component {
                 />
                 <i className="fas fa-eye-slash eye"></i>
               </div>
-              <br />
-              <br />
               <button>Login</button>
-              <br />
-              <br />
-              <div className="Forgot">
-                <a href="link"> Forget Password?</a>
+              </div>
+              <div className="forgotrow">
+                <div className="forgot">Forgot Password</div>
                 <div>
-                  <label>Don't have an account at?</label>
-                  <a href="link">Signup?</a>
-                </div>
+                  <span>Don't have account?</span>&nbsp;
+                  <span style={{color:"#4AB9E2"}}>signin?</span>
               </div>
-              <div className="copyright">
+            </div>
+
+            <div className="copyright">
+              <span style={{ color: "#506E7C" }}>
                 <h5>
-                  <p>
-                    copyright Ⓒ 2020-21 inclass All rights reserved | Powered by
-                  </p>
-                  <p>Peoplelink Unified Communications Pvt Ltd</p>
+                  copyright Ⓒ 2020-21 inclass All rights reserved | Powered by
+                  <br />
+                  Peoplelink Unified Communications Pvt Ltd
                 </h5>
-              </div>
+              </span>
             </div>
           </form>
         </div>

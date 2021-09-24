@@ -13,15 +13,14 @@
 .left {
   position: absolute;
   left: 0;
-  background-image: url("./Images/3718984.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
+}
+.split img{
+  width:100%;
+  height:auto;
+  object-fit: cover;
 }
 .bottom {
   text-align: center;
-  padding-top: 530px;
   font-family: Arial;
 }
 .right {
@@ -29,14 +28,10 @@
   right: 0;
   background-color: white;
   overflow: hidden;
-
-  /* background-image: url("Images/In-Class-01-01.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
-.flex {
-  padding-top: 13vh;
+
+.label{
+  margin-top: 200px;
 }
 .font {
   padding-left: 70;
@@ -46,10 +41,14 @@
   position: relative;
   width: 90%;
 }
+.middle{
+  text-align: center;
+}
 .password {
   margin: 0;
   padding-right: 9%;
   width: 100%;
+  margin-left: 9vh;
 }
 .eye {
   position: absolute;
@@ -60,8 +59,10 @@
 }
 
 .select {
-  margin-left: 590px;
-  margin-top: 10px;
+  position: absolute;
+  right: 70px;
+  margin-top: 20px;
+  
 }
 h2 {
   text-align: center;
@@ -71,22 +72,30 @@ h2 {
   border: none;
   outline: 0px;
   border-bottom: 2px solid lightgrey;
-  width: 80%;
-  margin-left: 70px;
+  width: 80%; 
 }
 button {
   width: 81%;
   height: 40px;
-  margin-left: 70px;
   color: white;
   background-color: lightskyblue;
   border-radius: 5px;
+  border: none;
+  margin-top: 35px
+}
+.forgotrow{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+.forgot{
+  color:#4AB9E2
 }
 .copyright {
   text-align: center;
-  padding-top: 210px;
+  margin-top: 25vh; 
 }
-
 .logo {
   width: 50%;
   max-width: 300px;
@@ -95,13 +104,61 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-.Forgot {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 68px;
-  margin-right: 80px;
+.rightlogo{
+  padding-top: 150px;
 }
 .fontall {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* *************************** */
+
+
+@media(max-width:767px){
+  .left{
+    display:none;
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+}
+@media(max-width:414px){
+  .copyright{
+    margin-top: 19vh;
+    padding: 0px 28px 0px 28px;
+  }
+  .password{
+    margin-left: 5vh;
+  }
+  .forgotrow{
+    
+    flex-direction: column;
+    justify-content:space-around;
+    margin-left: 40px;
+  }
+  .rightlogo{
+    padding-top: 100px; 
+  }
+  .select{
+    position: absolute;
+  right: 35px;
+  }
+  .logo {
+    width: 100%;
+    max-width: 200px;
+    margin-top:50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+@media(max-width:414px){
+  .copyright{
+    margin-top: 14vh;
+    padding: 0px 28px 0px 28px;
+  }
+}
+  
+
