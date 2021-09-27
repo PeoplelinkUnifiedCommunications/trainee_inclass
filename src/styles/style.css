@@ -70,6 +70,18 @@ body {
   margin-left: 25px;
   color: lightgray;
 }
+/* .hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+} */
 
 .logout {
   display: flex;
@@ -194,7 +206,10 @@ body {
 .Grid p {
   margin: 4px 0px;
 }
-@media (min-width: 240px) and (max-width: 786px) {
+.menu {
+  display: none;
+}
+@media (min-width: 240px) and (max-width: 767px) {
   .horizontal {
     width: 100%;
   }
@@ -203,8 +218,8 @@ body {
   }
   .border-bottom {
     width: 85%;
-    margin-left: 6%;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    display: flex;
   }
   .grade_cont {
     width: 100%;
@@ -226,8 +241,14 @@ body {
     margin-top: 10%;
     margin-right: 20px;
   }
+  .menu {
+    display: block;
+    color: black;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
 }
-@media (min-width: 787px) and (max-width: 1112px) {
+@media (min-width: 768px) and (max-width: 1112px) {
   .avatar {
     vertical-align: middle;
     width: 40px;

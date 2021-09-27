@@ -5,6 +5,14 @@ import logo from "./images/In-Class-01-01.png";
 import avatar from "./images/img_avatar.png";
 
 function App() {
+  function handleNav() {
+    var x = document.getElementsByClassName("vertical");
+    if (x.style.display == "block") {
+      x.style.diplay = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
   return (
     <div>
       <div className="horizontal">
@@ -26,6 +34,7 @@ function App() {
           <a href="link">
             <i className="fa fa-bars fa-2x" style={{ color: "#EAF7FC" }}></i>
           </a>
+
           <br />
           <br />
           <a href="link">
@@ -53,9 +62,20 @@ function App() {
             <i class="fa fa-power-off fa-2x" style={{ color: "#E3F6FC" }}></i>
           </a>
         </div>
+
+        {/* <div className="hamburger">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div> */}
       </div>
       <div className="content">
         <div class="border-bottom">
+          <div className="menu" onClick={handleNav}>
+            <a href="link">
+              <i className="fa fa-bars fa-2x"></i>
+            </a>
+          </div>
           <h1>My Classes</h1>
         </div>
         <div className="grade_cont">
