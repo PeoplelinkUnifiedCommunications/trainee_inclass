@@ -1,0 +1,63 @@
+.session_container {
+  max-width: 620px;
+  width: 100%;
+}
+.session_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+.meeting_container {
+  background-color: white;
+  border-radius: 4px;
+  margin: 8px 0px 0px 4px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  box-shadow: 0px 2px 2px lightgray;
+}
+.meeting_details_wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  gap: 12px;
+  flex: 1 1 auto;
+}
+.join_meeting {
+  display: flex;
+  padding-right: 20px;
+}
+.join_meeting a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #03b8e2;
+}
+.meeting_code {
+  width: 55px;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.meeting_details p:not(:first-child),
+span {
+  font-size: 0.7rem;
+  color: gray;
+}
+.meeting_details p:first-child {
+  font-size: 1rem;
+}
+
+/* @media (max-width: 1110px) {
+  .session_container {
+    width: 100%;
+  }
+} */

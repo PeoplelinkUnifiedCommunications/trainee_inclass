@@ -1,0 +1,28 @@
+.schedule_cont {
+  max-width: 615px;
+  width: 100%;
+}
+.schedule_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0px;
+}
+.schedule_container {
+  background-color: white;
+  box-shadow: 0px 2px 4px lightgray;
+  border-radius: 4px;
+  padding: 6px 16px;
+}
+.schedule_details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.schedule_details > div {
+  font-size: 0.8rem;
+  padding-top: 14px;
+}
+.schedule_details > div:first-child {
+  font-size: 0.9rem;
+}

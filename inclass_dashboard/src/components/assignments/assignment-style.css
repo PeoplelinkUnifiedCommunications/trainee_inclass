@@ -1,0 +1,45 @@
+.assignment_container {
+  max-width: 620px;
+  width: 100%;
+}
+.assignment_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+.assgn_details {
+  background-color: white;
+  border-radius: 4px;
+  margin: 8px 0px 0px 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 2px 2px lightgray;
+}
+.assgn_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.pointer {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+.assgn_name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.assgn_wrapper div {
+  font-size: 0.9rem;
+}
+.assgn_wrapper div p {
+  padding-top: 4px;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.8);
+}
